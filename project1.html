@@ -3,55 +3,21 @@
 <head>
   <title>바다조개 - 전복</title>
   <meta charset="utf-8">
-  <style>
-    body {
-      margin:0;
-    }
-    a {
-      color:blue;
-      text-decoration: none;
-    }
-    h1 {
-      text-align: center;
-      border-bottom:5px solid gray;
-      margin:0;
-      padding:20px;
-    }
-    ol {
-      border-right:5px solid gray;
-      width:100px;
-      margin:0;
-      padding:20px;
-      text-decoration: none;
-    }
-    #grid{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-      padding-left:33px;
-    }
-    #grid #article{
-      padding-left:25px;
-    }
-    @media(max-width:750px){
-      #grid{
-        display: block;
-      }
-      ol {
-        border-right:none;
-      }
-      h1{
-        border-bottom:none;
-      }
-    }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="seashell.html">바다조개</a></h1>
+  <input type="button" value="다크모드" onclick="
+   document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="기본모드" onclick="
+   document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  ">
   <div id="grid">
     <ol>
-      <li><a href="project1.html"style="color:gray;text-decoration: none;">전복</a></li>
+      <li><a href="project1.html"style="color:Tomato;text-decoration: none;">전복</a></li>
       <li><a href="project2.html">홍합</a></li>
       <li><a href="project3.html">가리비</a></li>
     </ol>
